@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Elephanta</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/work.css">
+
+  </head>
+
+
+  <body>
+    <div class="container">
+        <div id="top_border"></div>
+        <div id="body">
+            <div id="side_border"></div>
+            <div id="main_body">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn"></i>
+                    <!-- <i class="fas fa-times" id="cancel"></i> -->
+                    <i class="fa fa-arrow-left" id="cancel"></i>
+                </label>
+
+                <div class="sidebar">
+                    <header>My Menu</header>
+                    <ul> 
+                        <li >
+                            <a href="#" class="active">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                                <span class="title">Shortcuts</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-stream"></i>
+                                <span class="title">Overview</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar"></i>
+                                <span class="title">Events</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="feat-btn">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="title">Features</span>
+                                <span class="fas fa-caret-down first" id="arrow1"></span>
+                            </a>
+                            <ul class="feat-show">
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">Pages</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">Elements</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="serv-btn">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="title">Services</span>
+                                <span class="fas fa-caret-down second" id="arrow2"></span>
+                            </a>
+                            <ul class="serv-show">
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">App design</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">Web Desig  web Web</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-question-circle"></i>
+                                <span class="title">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sliders-h"></i>
+                                <span class="title">Services</span>
+
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="#">
+                                <i class="far fa-question-circle"></i>
+                                <span class="title">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sliders-h"></i>
+                                <span class="title">Services</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-question-circle"></i>
+                                <span class="title">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sliders-h"></i>
+                                <span class="title">Services</span>
+
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="Home.html">
+                                <i class="far fa-envelope"></i>
+                                <span class="title">Contact</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <script>
+
+                    $('.feat-btn').click(function(){
+                        $('div ul .feat-show').toggleClass("show");
+                        $('div ul .first').toggleClass("rotate");
+                    });
+                    $('.serv-btn').click(function(){
+                        $('div ul .serv-show').toggleClass("show1");
+                        $('div ul .second').toggleClass("rotate");
+                    });
+                    $('div ul li').click(function(){
+                        $(this).addClass("active").siblings().removeClass("active");
+                    });
+
+                </script>
+
+                <div class="main_block">
+                    <div class="showcase">
+                        <div id="parallax">
+                            <div class="showcase-top">
+                                <img src="Img/logo.png" alt="Logo" />
+
+                            </div>
+                            <div class="showcase-content">
+                                <h1>Elephanta</h1>
+                                <p>one line description is here...</p>
+                            </div>
+                        </div>
+                            <div class="wave"></div>
+                        <link rel="stylesheet" href="css/style.css">
+                        
+                    </div>
+
+
+
+                    <!-- WORKING AREA -->
+
+                    <div id="work">
+                        
+                        <h2 class="soon">Comming Soon...</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit voluptatem officiis, dolor asperiores deserunt nobis fugit nihil, corrupti tempore porro tenetur dolorum deleniti ipsa maiores! Magni assumenda atque cupiditate alias minima nemo eveniet veniam, unde quo perferendis sit repudiandae, laboriosam officiis autem, distinctio aspernatur temporibus sequi in cum vitae quod? Eum quam accusamus alias reprehenderit repellendus ad sed velit itaque quos, at porro. Pariatur tempore sunt harum perspiciatis sapiente ad quae. Similique earum quia est accusamus, cum in sint quidem deleniti consequatur tenetur obcaecati error illo omnis eligendi consequuntur voluptate unde rem impedit quae blanditiis esse ad! Dolorum odio, laudantium doloribus id eum autem quo beatae consectetur eveniet debitis velit voluptatem corporis rerum assumenda aut harum in, suscipit, temporibus nesciunt? Architecto inventore praesentium debitis aperiam ipsam esse animi vel quibusdam voluptas, quod odio fugit, magni accusantium impedit atque sunt similique dolores, corrupti ab reprehenderit. Quidem earum suscipit sunt illo cumque magni accusamus. Velit quo molestias enim libero voluptate quasi nostrum non, sed quod labore rem recusandae quam ad, nisi dolore minima deserunt! Nostrum quis id expedita architecto! Fugit quidem quis libero, ipsam, molestiae nesciunt praesentium saepe excepturi nulla ut aut doloremque iure velit commodi sit porro fugiat, dolore possimus consequatur magni. Consectetur veniam, distinctio quisquam rerum dignissimos quia minima sequi provident, debitis vero porro labore cum necessitatibus ipsa modi cupiditate officiis alias, minus voluptatem molestias itaque dolore qui! Culpa ducimus possimus vel neque debitis nobis temporibus atque deleniti assumenda quod, error, expedita voluptatibus suscipit cum ullam ipsa nulla adipisci. Illo optio maiores corrupti beatae tenetur quasi assumenda aspernatur ut. Incidunt minus error laborum molestiae, voluptas saepe nihil cum doloribus reprehenderit, quam fugiat quasi assumenda nam inventore! Adipisci a eum iusto corrupti culpa nemo harum minima repellendus iste quis ipsa beatae porro rerum, sed nobis voluptates voluptate facilis enim voluptatem aspernatur, quaerat pariatur, necessitatibus eaque nesciunt! Unde omnis eos totam labore minima amet mollitia eum quae fuga ad, consectetur atque odit ipsa asperiores nobis necessitatibus earum nam aliquid quod. Blanditiis, atque vero corrupti veritatis laudantium eaque suscipit adipisci veniam delectus quae iste eos, assumenda, laboriosam laborum libero numquam voluptates repellat odit architecto ipsa ducimus recusandae. Nesciunt eaque dolorum eveniet quas provident tenetur odio possimus, aperiam est consectetur quae fugiat quam qui sint dolor accusantium illum vel? Explicabo, quam, cum beatae aut provident quia perferendis, blanditiis repudiandae voluptate cumque vero? Quia iste quibusdam provident velit dolor eos voluptatem expedita officia sed obcaecati.</p>
+                        <div class="wrapper">
+                            <button class="btn btn1">Don't Touch Me!</button>
+                            <button class="btn btn2">Don't Touch Me!</button>
+                            <button class="btn btn3">Don't Touch Me!</button>
+                            <button class="btn btn4">Don't Touch Me!</button>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <!-- WORKING AREA -->
+                    <!-- <div id="space"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

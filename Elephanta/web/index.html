@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+
+  <head>
+    <meta charset="utf-8">
+    <title>Elephanta</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/new.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+
+  <body>
+    <div class="container">
+        <div id="top_border"></div>
+        <div id="body">
+            <div id="side_border"></div>
+            <div id="main_body">
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fas fa-bars" id="btn"></i>
+                    <!-- <i class="fas fa-times" id="cancel"></i> -->
+                    <i class="fa fa-arrow-left" id="cancel"></i>
+                </label>
+
+                <div class="sidebar">
+                    <header>My Menu</header>
+                    <ul> 
+                        <li >
+                            <a href="#" class="active">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-link"></i>
+                                <span class="title">Shortcuts</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-stream"></i>
+                                <span class="title">Overview</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-calendar"></i>
+                                <span class="title">Events</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="feat-btn">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="title">Features</span>
+                                <span class="fas fa-caret-down first" id="arrow1"></span>
+                            </a>
+                            <ul class="feat-show">
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">Pages</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">Elements</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="serv-btn">
+                                <i class="fas fa-qrcode"></i>
+                                <span class="title">Services</span>
+                                <span class="fas fa-caret-down second" id="arrow2"></span>
+                            </a>
+                            <ul class="serv-show">
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">App design</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="far fa-circle"></i>
+                                        <span class="title">Web Desig  web Web</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-question-circle"></i>
+                                <span class="title">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sliders-h"></i>
+                                <span class="title">Services</span>
+
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="#">
+                                <i class="far fa-question-circle"></i>
+                                <span class="title">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sliders-h"></i>
+                                <span class="title">Services</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="far fa-question-circle"></i>
+                                <span class="title">About</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-sliders-h"></i>
+                                <span class="title">Services</span>
+
+                            </a>
+                        </li>
+                        <li> 
+                            <a href="Home.html">
+                                <i class="far fa-envelope"></i>
+                                <span class="title">Contact</span>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <script>
+
+                    $('.feat-btn').click(function(){
+                        $('div ul .feat-show').toggleClass("show");
+                        $('div ul .first').toggleClass("rotate");
+                    });
+                    $('.serv-btn').click(function(){
+                        $('div ul .serv-show').toggleClass("show1");
+                        $('div ul .second').toggleClass("rotate");
+                    });
+                    $('div ul li').click(function(){
+                        $(this).addClass("active").siblings().removeClass("active");
+                    });
+
+                </script>
+
+                <div class="main_block">
+                    <div class="showcase">
+                        <div id="parallax">
+                            <div class="showcase-top">
+                                <img src="Img/logo.png" alt="Logo" />
+
+                            </div>
+                            <div class="showcase-content">
+                                <h1>Elephanta</h1>
+                                <p>one line description is here...</p>
+                            </div>
+                        </div>
+                            <div class="wave"></div>
+                        <link rel="stylesheet" href="style.css">
+                        
+                    </div>
+
+
+
+                    <!-- WORKING AREA -->
+
+                    <div id="work">
+                        <h2 class="soon">Comming Soon...</h2>
+                    </div>
+
+                    <!-- WORKING AREA -->
+                    <div id="space"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
